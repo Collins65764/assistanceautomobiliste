@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS `ntouks`
+
+USE `ntouks`
+
+CREATE TABLE User (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(100) UNIQUE NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    password_hash VARCHAR(255) NOT NULL,
+    role VARCHAR(50) DEFAULT 'user'
+);
