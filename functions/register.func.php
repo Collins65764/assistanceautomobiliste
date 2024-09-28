@@ -41,7 +41,7 @@ function registerUser($conn, $username, $email, $password, $numero_tel) {
 
         // Préparer la requête d'insertion
         $sql = "INSERT INTO user (username, email, password_hash, role, numero_tel) 
-                VALUES (:username, :email, :password_hash, :role, :numero_tel)";
+                VALUES (:username, :email, :password_hash, role, :numero_tel)";
         $stmt = $conn->prepare($sql);
 
         // Lier les paramètres

@@ -1,5 +1,5 @@
 <?php
-include 'config.php';
+include  'templates/config.php';
 session_start();
 if($_POST){
     // traitement pour la page de traitement de connexion
